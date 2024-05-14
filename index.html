@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <header class="top-line">
+    <header class="top-line section-img">
       <div class="header-container">
         <nav class="header-navigation">
           <span class="logo">
@@ -55,15 +55,18 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="first-section"></section>
+    </main>
     <footer>
-      <div class="mobile-menu-wrapper js-menu-container">
+      <div class="modal is-hidden">
+        <div class="mobile-menu-wrapper js-menu-container">
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close-btn js-close-menu" type="button">
             <svg
               class="mobile-menu-close-btn-icon"
-              width="8"
-              height="8"
+              width="24px"
+              height="24px"
               aria-label="mobile menu close icon"
             >
               <use href="./image/symbol-defs.svg#icon-close-btn"></use>
@@ -72,7 +75,7 @@
           <ul class="mobile-menu list">
             <li class="mobile-menu-item">
               <a class="mobile-menu-link link" href="">
-                <h2 class="color-word nav-header">Home</h2></a
+                <h2 class=" nav-header">Home</h2></a
               >
             </li>
             <li class="mobile-menu-item">
@@ -89,16 +92,18 @@
               <a class="mobile-menu-link link" href="">
                 <svg
                 class="search-icon"
-                width="30px"
-                height="30px"
+                width="50px"
+                height="50px"
                 aria-label="search"
               >
-                <use href="./image/symbol-defs.svg#icon-K5c6h01"></use>
+                <use href="./image/symbol-defs.svg#icon-search"></use>
               </svg>
               </a>
             </li>
           </ul>
         </nav>
+      </div>
+      
     </footer>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
