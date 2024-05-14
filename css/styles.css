@@ -1,0 +1,116 @@
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url(../image/heroimg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+  /* ============================MOBILE======================== */
+  @media screen and (max-width: 767px) {
+    .container {
+      max-width: 320px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .header-nav-list {
+      display: none;
+    }
+    .top-line {
+      width: 100%;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .logo {
+      font-family: Poppins;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      width: 99px;
+      height: 52px;
+      align-items: center;
+    }
+    .logo-svg {
+    }
+    .mobile-menu-wrapper {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999999;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      transform: translate(100%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .mobile-menu-wrapper.is-open {
+      transform: translate(0%);
+    }
+    .mobile-menu-close-btn {
+      background-color: transparent;
+      position: absolute;
+      top: 24px;
+      right: 16px;
+      border: none;
+      padding: 0;
+      line-height: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #e7e9fc;
+      stroke-width: 1px;
+      stroke: rgba(0, 0, 0, 0.1);
+    }
+    .mobile-menu-container {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-right: 24px;
+      padding-top: 72px;
+      padding-bottom: 40px;
+    }
+
+    .mob-menu-open {
+      background-color: transparent;
+      border: none;
+      line-height: 0;
+    }
+  }
+}
